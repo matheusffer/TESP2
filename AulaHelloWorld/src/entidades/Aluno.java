@@ -1,4 +1,4 @@
-package br.unibh;
+package entidades;
 
 import java.util.Date;
 
@@ -6,8 +6,8 @@ public class Aluno extends Pessoa {
 	private Long matricula;
 	private Date dataAniversario;
 
-	public Aluno(String nome, String cpf, Long matricula, Date dataAniversario) {
-		super(nome, cpf);
+	public Aluno(Long id, String nome, String cpf, Long matricula, Date dataAniversario) {
+		super(id, nome, cpf);
 		this.matricula = matricula;
 		this.dataAniversario = dataAniversario;
 	}
@@ -27,22 +27,23 @@ public class Aluno extends Pessoa {
 	public void setDataAniversario(Date dataAniversario) {
 		this.dataAniversario = dataAniversario;
 	}
-	public static boolean verificaMatricula(String matricula){
-		if(matricula == null){
+
+	public static boolean verificaMatricula(String matricula) {
+		if (matricula == null) {
 			return false;
-		}else if (matricula.trim().equals("")){
+		} else if (matricula.trim().equals("")) {
 			return false;
-		}else if (matricula.length() != 8){
+		} else if (matricula.length() != 8) {
 			return false;
-		}else{
+		} else {
 			return true;
 		}
 	}
 
 	@Override
 	public String toString() {
-		return super.toString()+"Aluno [matricula=" + matricula + ", dataAniversario="
-				+ dataAniversario + "]";
+		return super.toString() + "Aluno [matricula=" + matricula
+				+ ", dataAniversario=" + dataAniversario + "]";
 	}
 
 }
