@@ -12,6 +12,7 @@ public class Aluno extends Pessoa {
 		this.dataAniversario = dataAniversario;
 	}
 
+
 	public Long getMatricula() {
 		return matricula;
 	}
