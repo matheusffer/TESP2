@@ -22,6 +22,7 @@ public class HelloWorld {
 		Professor p2 = new Professor(5L, "Josefa", "54545321454", new BigDecimal(
 				4230));
 
+		
 		System.out.println(Aluno.verificaMatricula("12345678"));
 		System.out.println("chamando o BONUS professor " + Professor.BONUS);
 
