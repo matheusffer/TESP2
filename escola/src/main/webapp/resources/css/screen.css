@@ -10,7 +10,7 @@ body {
     padding: 0 20px 10px 20px;
     border: 1px solid #666666;
     width: 865px; /* subtract 40px from banner width for padding */
-    background: #FFFFFF url(#{request.contextPath}/resources/gfx/banner.png) no-repeat;
+    background: #FFFFFF url(#{request.contextPath}/resources/gfx/Acad.png) no-repeat;
     padding-top: 110px;
 }
 #sidebar {
@@ -30,6 +30,7 @@ body {
     color: #666666;
     font-size: 0.85em;
     padding: 3em 0 0 0;
+    padding-top: 110px;
 }
 code {
     font-size: 1.1em;
