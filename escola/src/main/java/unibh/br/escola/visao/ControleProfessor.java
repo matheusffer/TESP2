@@ -11,6 +11,7 @@ import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 
 import unibh.br.entidades.Professor;
+import unibh.br.escola.negocio.ServicoProfessor;
 
 @ManagedBean(name = "professormb")
 @ViewScoped

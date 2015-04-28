@@ -21,27 +21,27 @@ public class ServicoProfessor implements DAO<Professor, Long> {
 
 	@Override
 	public Professor insert(Professor t) throws Exception {
-		log.info("Persistindo " + t);
+		log.info("Executando... " + t);
 		em.persist(t);
 		return t;
 	}
 
 	@Override
 	public Professor update(Professor t) throws Exception {
-		log.info("Atualizando " + t);
+		log.info("Atualizando... " + t);
 		return em.merge(t);
 	}
 
 	@Override
 	public void delete(Professor t) throws Exception {
-		log.info("Removendo " + t);
+		log.info("Apagando... " + t);
 		Object c = em.merge(t);
 		em.remove(c);
 	}
 
 	@Override
 	public Professor find(Long k) throws Exception {
-		log.info("Encontrando Professor " + k);
+		log.info("Procurando professor " + k);
 		return em.find(Professor.class, k);
 	}
 

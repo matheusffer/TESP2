@@ -5,15 +5,10 @@
    xmlns:h="http://java.sun.com/jsf/html"
    template="/WEB-INF/templates/default.xhtml">
    <ui:define name="content">
-      <h1>Welcome to JBoss AS 7!</h1>
-
-      <p>You have successfully deployed a Java EE 6 web application
-         on JBoss AS 7.</p>
-
+        
       <h:form id="reg">
-         <h2>Register (Bean Validation example)</h2>
-         <p>Enforces annotation-based constraints defined on the
-            model class.</p>
+      
+      
          <table>
             <tr>
                <th style="text-align: right;"><h:outputLabel
@@ -21,7 +16,9 @@
                <td><h:inputText id="name" value="#{newMember.name}" />
                   <h:message for="name" errorClass="invalid" /></td>
             </tr>
+        
             <tr>
+            
                <th style="text-align: right;"><h:outputLabel
                      for="email" value="Email:" /></th>
                <td><h:inputText id="email"
@@ -36,6 +33,7 @@
                      for="phoneNumber" errorClass="invalid" /></td>
             </tr>
          </table>
+          
          <p>
             <h:commandButton id="register"
                action="#{memberRegistration.register}" value="Register" />
